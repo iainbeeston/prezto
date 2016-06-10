@@ -11,3 +11,16 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+if (( $#commands[(i)direnv] )); then
+    eval "$(direnv hook zsh)"
+fi
+
+# don't expand filenames from symbols (useful for passing args to rake tasks)
+unsetopt nomatch
+
+alias b="bundle exec"
+alias e="emacsclient -t"
+alias ed="emacs --daemon"
+alias ek="emacsclient -e '(kill-emacs)'"
+alias replace="ruby -ni.bak -e \"gsub!(ARGV[1], ARGV[0])\""
