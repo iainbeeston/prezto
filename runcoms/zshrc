@@ -20,7 +20,7 @@ fi
 unsetopt nomatch
 
 alias b="bundle exec"
-alias e="emacsclient -t"
+alias e="emacsclient -c"
 alias ed="emacs --daemon"
 alias ek="emacsclient -e '(kill-emacs)'"
 alias replace="ruby -ni.bak -e \"gsub!(ARGV[1], ARGV[0])\""
