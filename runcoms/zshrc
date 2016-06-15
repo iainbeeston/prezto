@@ -12,10 +12,6 @@ fi
 
 # Customize to your needs...
 
-if (( $#commands[(i)direnv] )); then
-    eval "$(direnv hook zsh)"
-fi
-
 # don't expand filenames from symbols (useful for passing args to rake tasks)
 unsetopt nomatch
 
