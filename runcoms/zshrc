@@ -16,6 +16,5 @@ fi
 unsetopt nomatch
 
 alias b="bundle exec"
-alias e="emacsclient -c"
-alias ed="emacs --daemon"
+alias e=$EDITOR
 alias ek="emacsclient -e '(kill-emacs)'"
