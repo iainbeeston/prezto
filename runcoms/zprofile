@@ -82,3 +82,12 @@ if [[ -d "$N_PREFIX" ]]; then
         "$N_PREFIX/bin"
     )
 fi
+
+# yarn
+export YARN_CONFIG="$HOME/.yarn-config"
+if [[ -d "$YARN_CONFIG" ]]; then
+    path=(
+        $path
+        "$YARN_CONFIG/global/node_modules/.bin"
+    )
+fi
