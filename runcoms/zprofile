@@ -73,16 +73,6 @@ if (( $#commands[(i)direnv] )); then
     eval "$(direnv hook zsh)"
 fi
 
-# n
-export N_PREFIX="$HOME/.n"
-
-if [[ -d "$N_PREFIX" ]]; then
-    path=(
-        $path
-        "$N_PREFIX/bin"
-    )
-fi
-
 # yarn
 export YARN_CONFIG="$HOME/.yarn-config"
 if [[ -d "$YARN_CONFIG" ]]; then
