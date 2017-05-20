@@ -74,7 +74,7 @@ if (( $#commands[(i)direnv] )); then
 fi
 
 # yarn
-export YARN_CONFIG="$HOME/.yarn-config"
+export YARN_CONFIG="$HOME/.config/yarn"
 if [[ -d "$YARN_CONFIG" ]]; then
     path=(
         $path
