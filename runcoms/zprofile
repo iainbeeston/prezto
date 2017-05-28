@@ -80,3 +80,9 @@ if [[ -d "$YARN_CONFIG" ]]; then
         "$YARN_CONFIG/global/node_modules/.bin"
     )
 fi
+
+# OPAM configuration
+export OPAM_HOME="$HOME/.opam"
+if [[ -d "$OPAM_HOME" ]]; then
+    source "$OPAM_HOME/opam-init/init.zsh" > /dev/null 2> /dev/null || true
+fi
