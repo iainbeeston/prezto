@@ -14,3 +14,5 @@ fi
 
 # don't expand filenames from symbols (useful for passing args to rake tasks)
 unsetopt nomatch
+
+alias be='bundle exec'
