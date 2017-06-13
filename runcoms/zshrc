@@ -18,5 +18,5 @@ unsetopt nomatch
 alias be='bundle exec'
 
 function replace() {
-  perl -i -p -e "s/${(q)1}/${(q)2}/g" $@[3,-1]
+  perl -0 -i -p -e "s/${1}/${2}/gs" $@[3,-1]
 }
