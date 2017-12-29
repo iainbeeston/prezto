@@ -75,3 +75,8 @@ if [[ -d "$YARN_CONFIG" ]]; then
         "$YARN_CONFIG/global/node_modules/.bin"
     )
 fi
+
+# nodenv
+if [[ -d "$HOME/.nodenv" ]]; then
+  eval "$(nodenv init -)"
+fi
