@@ -16,6 +16,10 @@ fi
 unsetopt nomatch
 
 alias be='bundle exec'
+alias gs='git status'
+alias ga='git add .'
+alias gr='git reset HEAD .'
+alias gco='git checkout -- .'
 
 function replace() {
   perl -0 -i -p -e "s/${1}/${2}/gms" $@[3,-1]
