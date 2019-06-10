@@ -80,3 +80,8 @@ fi
 if [[ -d "$HOME/.nodenv" ]]; then
   eval "$(nodenv init -)"
 fi
+
+# asdf
+if [[ -d "/usr/local/opt/asdf" ]]; then
+  source /usr/local/opt/asdf/asdf.sh
+fi
