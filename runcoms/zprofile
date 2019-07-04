@@ -71,8 +71,8 @@ fi
 export YARN_CONFIG="$HOME/.config/yarn"
 if [[ -d "$YARN_CONFIG" ]]; then
     path=(
+        `yarn global bin`
         $path
-        "$YARN_CONFIG/global/node_modules/.bin"
     )
 fi
 
