@@ -61,6 +61,12 @@ if (( $#commands[(i)lesspipe(|.sh)] )); then
   export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
 fi
 
+# Chruby
+if [[ -d "/usr/local/share/chruby" ]]; then
+    source /usr/local/share/chruby/chruby.sh
+    source /usr/local/share/chruby/auto.sh
+fi
+
 # yarn
 export YARN_CONFIG="$HOME/.config/yarn"
 if [[ -d "$YARN_CONFIG" ]]; then
@@ -70,7 +76,7 @@ if [[ -d "$YARN_CONFIG" ]]; then
     )
 fi
 
-# asdf
-if [[ -d "/usr/local/opt/asdf" ]]; then
-  source /usr/local/opt/asdf/asdf.sh
+# nodenv
+if [[ -d "$HOME/.nodenv" ]]; then
+  eval "$(nodenv init -)"
 fi
