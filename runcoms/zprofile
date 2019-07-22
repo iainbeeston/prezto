@@ -63,17 +63,17 @@ fi
 
 # Chruby
 if [[ -d "/usr/local/share/chruby" ]]; then
-    source /usr/local/share/chruby/chruby.sh
-    source /usr/local/share/chruby/auto.sh
+  source /usr/local/share/chruby/chruby.sh
+  source /usr/local/share/chruby/auto.sh
 fi
 
 # yarn
 export YARN_CONFIG="$HOME/.config/yarn"
 if [[ -d "$YARN_CONFIG" ]]; then
-    path=(
-        `yarn global bin`
-        $path
-    )
+  path=(
+    `yarn global bin`
+    $path
+  )
 fi
 
 # nodenv
@@ -81,6 +81,7 @@ if [[ -d "$HOME/.nodenv" ]]; then
   eval "$(nodenv init -)"
 fi
 
+# nvm
 if [[ -d "$HOME/.nvm" ]]; then
   export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
