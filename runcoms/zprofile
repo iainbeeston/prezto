@@ -86,3 +86,8 @@ if [[ -d "$HOME/.nvm" ]]; then
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
   [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"
 fi
+
+# direnv
+if [[ -x "/usr/local/bin/direnv" ]]; then
+  eval "$(direnv hook zsh)"
+fi
