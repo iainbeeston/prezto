@@ -92,3 +92,8 @@ fi
 if [[ -x "/usr/local/bin/direnv" ]]; then
   eval "$(direnv hook zsh)"
 fi
+
+# scm puff
+if [[ -x "/usr/local/bin/scmpuff" ]]; then
+  eval "$(scmpuff init -s)"
+fi
