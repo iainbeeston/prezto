@@ -39,8 +39,7 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'completion' \
   'contrib-prompt' \
-  'prompt' \
-  'ssh'
+  'prompt'
 
 #
 # Autosuggestions
