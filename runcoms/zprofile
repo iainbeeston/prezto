@@ -10,7 +10,7 @@
 #
 
 if [[ "$OSTYPE" == darwin* ]]; then
-  export BROWSER='open'
+  export BROWSER='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 fi
 
 #
