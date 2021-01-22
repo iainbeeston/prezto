@@ -27,4 +27,13 @@ function git_branch_cleanup() {
   git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d
 }
 
+function rails_update() {
+  bundle install
+  yarn install --check-files
+  yarn check --integrity
+  yarn check --verify-tree
+  bin/rails db:migrate
+  bin/rails db:test:prepare
+}
+
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
