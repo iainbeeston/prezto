@@ -26,3 +26,5 @@ function replace() {
 function git_branch_cleanup() {
   git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d
 }
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
