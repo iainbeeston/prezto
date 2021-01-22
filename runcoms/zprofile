@@ -31,6 +31,9 @@ fi
 # Disable spring, always
 export DISABLE_SPRING=1
 
+# If bullet is installed, show the footer
+export BULLET_FOOTER=true
+
 export AWS_VAULT_KEYCHAIN_NAME=login
 
 #
