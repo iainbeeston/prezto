@@ -46,7 +46,13 @@ version is 4.3.11.
      chsh -s /bin/zsh
      ```
 
-  5. Open a new Zsh terminal window or tab.
+  5. Add prezto-contrib
+
+     ```console
+     git clone --recurse-submodules https://github.com/belak/prezto-contrib contrib
+     ```
+
+  6. Open a new Zsh terminal window or tab.
 
 ### Troubleshooting
 
