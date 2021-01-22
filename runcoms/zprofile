@@ -28,6 +28,9 @@ if [[ -z "$LANG" ]]; then
   export LANG='en_GB.UTF-8'
 fi
 
+# Disable spring, always
+export DISABLE_SPRING=1
+
 export AWS_VAULT_KEYCHAIN_NAME=login
 
 #
